@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #e6ecff;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.div-agenda {
+    align-self: center;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+}
+
+header {
+    background-color: #4294ff;
+    border-bottom: 2px solid #000000;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .title {
+    display: flex;
+    margin-inline: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1 {
+    color: #e6ecff;
+    font-size: 24px;
+}
+
+.container form {
+    display: flex;
+    margin-inline: 20px;
+}
+
+.container form input[type="search"] {
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+}
+
+.container form input[type="submit"] {
+    background-color: #4294ff;
+    color: #e6ecff;
+    border-color: #e6ecff;
+    border-radius: 4px;
+    padding: 4px;
+    margin-left: 4px;
+}
+
+.container form input[type="submit"]:hover {
+    background-color: #e6ecff;
+    color: #4294ff;
+    border-color: #2170d9;
+}
+
+.container img {
+    margin-right: 5px;
+    width: 25px;
+}
+
+.div-form {
+    padding-block: 20px;
+    width: 100%;
+}
+
+.div-form input {
+    padding: 1px;
+    font-size: 20px;
+}
+
+#input-nome,
+#input-numero {
+    width: 200px;
+    border: 2px solid #4294ff;
+    border-radius: 4px;
+    background-color: #e6ecff;
+}
+
+#input-numero {
+    width: 150px;
+}
+
+#input-botao {
+    border: none;
+    border-radius: 4px;
+    color: #4294ff;
+    background-color: #e6ecff;
+    border: 1px solid #4294ff;
+    padding: 2px;
+}
+
+#input-botao:hover {
+    background-color: #4294ff;
+    color: #e6ecff;
+    cursor: pointer;
+}
+
+#input-nome:focus,
+#input-numero:focus {
+    background-color: #ffffff;
+    color: #4294ff;
+}
+
+table {
+    width: 100%;
+}
+
+table th {
+    border-bottom: 1px solid #4294ff;
+    justify-content: center;
+    padding-inline: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+table td {
+    text-align: center;
+    border-top: 1px solid #4294ff;
+    justify-content: center;
+    padding-inline: 40px;
+    font-size: 20px;
+    height: 40px;
+}
+
+tfoot td {
+    font-size: small;
+    font-weight: bold;
+    height: auto;
+    color: #2170d9;
+}

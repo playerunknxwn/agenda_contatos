@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Agenda de contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="title">
+                <img src="/imgs/phone-book.png" alt="Ícone de agenda">
+                <h1>Agenda de contatos</h1></div>
+            <form action="search-contacts">
+                <input type="search" name="search-bar" id="search-bar" placeholder="Digite o nome do contato">
+                <input type="submit" value="Procurar">
+            </form>
+        </div>
+    </header>
+    <div class="div-agenda">
+        <div class="div-form">
+            <form id="form-add">
+                <input placeholder="Nome" type="text" name="nome" id="input-nome" maxlength="15" required>
+                <input placeholder="Número" type="number" name="numero" id="input-numero" required>
+                <input type="submit" value="Adicionar" id="input-botao">
+            </form>
+        </div>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Número</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><!--
+                    <td>Thiago</td>
+                    <td>21997076942</td>
+                    -->
+                </tr>
+            </tbody>
+            <tfoot>
+                <!--
+                <td>Trabalho</td>
+                <td>0 contato(s)</td>
+                -->
+            </tfoot>
+        </table>
+    </div>
+    <script src="/main.js"></script>
+    </body>
+</html>
